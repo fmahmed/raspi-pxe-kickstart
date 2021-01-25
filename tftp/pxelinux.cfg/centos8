@@ -3,7 +3,7 @@ MENU TITLE CentOS8 Boot Menu
 LABEL CentOS8_x86-64 (Generic)
         kernel /bootfiles/centos8/vmlinuz
         MENU LABEL ^1) CentOS8_x86-64 (Generic)
-        append initrd=/bootfiles/centos8/initrd.img ksdevice=bootif lang=  text net.ifnames=0 biosdevname=0 ipv6.disable=1 kssendmac ks=https://pxe-server/kickstart/generic_centos8_x86_64_ks.cfg noverifyssl
+        append initrd=/bootfiles/centos8/initrd.img ksdevice=bootif lang=  text net.ifnames=0 biosdevname=0 kssendmac ks=https://pxe-server/kickstart/generic_centos8_x86_64_ks.cfg noverifyssl
         ipappend 2
 
 LABEL Main Menu
