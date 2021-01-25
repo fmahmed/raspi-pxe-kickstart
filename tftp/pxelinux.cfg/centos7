@@ -1,0 +1,21 @@
+MENU TITLE CentOS7 Boot Menu 
+
+LABEL Generic-CentOS7_x86-64
+        kernel /bootfiles/centos7/vmlinuz
+        MENU LABEL ^1) CentOS7_x86-64 (Generic)
+        MENU DEFAULT
+        append initrd=/bootfiles/centos7/initrd.img ksdevice=bootif lang=  text net.ifnames=0 biosdevname=0 ipv6.disable=1 kssendmac ks=https://pxe-server/kickstart/generic_centos7_x86_64_ks.cfg noverifyssl
+        ipappend 2
+
+LABEL CentOS7_x86-64_incl_networks
+        kernel /bootfiles/centos7/vmlinuz
+        MENU LABEL ^2) CentOS7_x86-64 (Inc.Networks)
+        append initrd=/bootfiles/centos7/initrd.img ksdevice=bootif lang=  text net.ifnames=0 biosdevname=0 ipv6.disable=1 kssendmac ks=https://pxe-server/kickstart/centos7_x86_64_ks.cfg noverifyssl 
+        ipappend 2
+
+LABEL Main Menu
+        MENU LABEL ^3) Go Back To MAIN MENU
+        KERNEL menu.c32
+        APPEND pxelinux.cfg/default
+
+MENU end

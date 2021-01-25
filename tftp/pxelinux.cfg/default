@@ -1,0 +1,31 @@
+DEFAULT menu.c32
+PROMPT 0
+MENU TITLE FAROOQ AHMED - Test LAB Main Menu
+TIMEOUT 200
+TOTALTIMEOUT 6000
+
+LABEL local
+        MENU LABEL ^1) Boot to local HDD
+        LOCALBOOT 0
+
+LABEL centos7 
+        MENU LABEL ^2) CentOS7 Servers
+        KERNEL menu.c32
+        APPEND pxelinux.cfg/centos7
+
+LABEL centos8
+        MENU LABEL ^3) CentOS8 Servers
+        KERNEL menu.c32
+        APPEND pxelinux.cfg/centos8
+
+LABEL esxi65
+        MENU LABEL ^4) ESXi 6.5
+        KERNEL menu.c32
+        APPEND pxelinux.cfg/esxi65
+
+LABEL win10
+        MENU LABEL ^5) Windows 10
+        KERNEL menu.c32
+        APPEND pxelinux.cfg/win10
+
+MENU end

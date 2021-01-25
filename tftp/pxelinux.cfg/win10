@@ -1,0 +1,14 @@
+MENU TITLE Windows-10 Boot Menu
+
+LABEL Windows-10
+        MENU LABEL ^1) Win10 (Generic)
+        KERNEL /bootfiles/win10/memdisk
+	INITRD /images/Win_10/windows_10_aio.iso
+	APPEND iso raw
+
+LABEL Main Menu
+        MENU LABEL ^2) Go Back To MAIN MENU
+        KERNEL menu.c32
+        APPEND pxelinux.cfg/default
+
+MENU end

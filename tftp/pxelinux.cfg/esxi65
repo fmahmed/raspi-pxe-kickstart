@@ -1,0 +1,26 @@
+MENU TITLE ESXi-5.6 Boot Menu
+
+LABEL ESXi-6.5 
+        MENU LABEL ^1) ESXi-6.5 (Generic - Install onto HDD)
+	KERNEL /images/ESXi_6.5/mboot.c32
+	APPEND -c /images/ESXi_6.5/boot.cfg ks=https://pxe-server/kickstart/esxi_65_ks.cfg noverifyssl
+	ipappend 2
+
+LABEL ESXi-6.5
+        MENU LABEL ^2) ESXi-6.5 (Generic - Install onto USB)
+        KERNEL /images/ESXi_6.5/mboot.c32
+        APPEND -c /images/ESXi_6.5/boot.cfg ks=https://pxe-server/kickstart/esxi_65_usb_ks.cfg noverifyssl
+        ipappend 2
+
+LABEL ESXi-6.5-HPE
+        MENU LABEL ^3) ESXi-6.5 (HPE-Image)
+        KERNEL /images/ESXi_6.5_HPE_Custom/mboot.c32
+        APPEND -c /images/ESXi_6.5_HPE_Custom/boot.cfg ks=https://pxe-server/kickstart/esxi_65_ks.cfg noverifyssl
+        ipappend 2
+
+LABEL Main Menu
+        MENU LABEL ^3) Go Back To MAIN MENU
+        KERNEL menu.c32
+        APPEND pxelinux.cfg/default
+
+MENU end
