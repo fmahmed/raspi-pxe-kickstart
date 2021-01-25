@@ -10,7 +10,7 @@ LABEL Generic-CentOS7_x86-64
 LABEL CentOS7_x86-64_incl_networks
         kernel /bootfiles/centos7/vmlinuz
         MENU LABEL ^2) CentOS7_x86-64 (Inc.Networks)
-        append initrd=/bootfiles/centos7/initrd.img ksdevice=bootif lang=  text net.ifnames=0 biosdevname=0 kssendmac ks=https://pxe-server/kickstart/centos7_x86_64_ks.cfg noverifyssl 
+        append initrd=/bootfiles/centos7/initrd.img ksdevice=bootif lang=  text net.ifnames=0 biosdevname=0 kssendmac ks=https://pxe-server/kickstart/centos7_x86_64_ks_incl_network.cfg noverifyssl 
         ipappend 2
 
 LABEL Main Menu

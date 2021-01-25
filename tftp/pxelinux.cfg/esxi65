@@ -3,7 +3,7 @@ MENU TITLE ESXi-5.6 Boot Menu
 LABEL ESXi-6.5 
         MENU LABEL ^1) ESXi-6.5 (Generic - Install onto HDD)
 	KERNEL /images/ESXi_6.5/mboot.c32
-	APPEND -c /images/ESXi_6.5/boot.cfg ks=https://pxe-server/kickstart/esxi_65_ks.cfg noverifyssl
+	APPEND -c /images/ESXi_6.5/boot.cfg ks=https://pxe-server/kickstart/esxi_65_hdd_ks.cfg noverifyssl
 	ipappend 2
 
 LABEL ESXi-6.5
