@@ -4,8 +4,8 @@ This repo contains the config required for the setup fo PXE server on a Raspberr
 
 ### The following tools has been used for the setup (Release - Raspbian v10 buster)
 
-- isc-dhcp-server = Server to serve DHCP requests from PXE Boot clients.
-- tftpd-hpa = Tftp server to server Boot files for the clients.
+- isc-dhcp-server = DHCP server to accept requests from PXE Boot clients.
+- tftpd-hpa = Tftp server to serve Boot files for the client hosts.
 - apache2 = Webserver to serve the OS-images.
 
 #### I have ***ONLY*** included custom configs which require updating according to your environments. So please update as required.
