@@ -1,6 +1,7 @@
 ## PXE Kickstart configuration on RaspberryPi
 
-This repo contains the config required for the setup fo PXE server on a RaspberryPi. The supported operating systems include CentOS7/8, ESXi 6.5/7.0 and Windows 10
+This repo contains the config required for the setup fo PXE server on a RaspberryPi. 
+The operating systems that can be kickstarted include CentOS7/8, ESXi 6.5/7.0 and Windows 10
 
 ### The following tools has been used for the setup (Release - Raspbian v10 buster)
 
