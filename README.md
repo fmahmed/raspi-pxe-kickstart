@@ -9,6 +9,6 @@ The operating systems that can be kickstarted include CentOS7/8, ESXi 6.5/7.0 an
 - tftpd-hpa = Tftp server to serve Boot files for the client hosts.
 - apache2 = Webserver to serve the OS-images.
 
-#### I have ***ONLY*** included custom configs which require updating according to your environments. So please update as required.
+#### I have ***ONLY*** included custom configs in this repo which require updating/adding according to your requirements. So please update as required.
 
 ##### Feedback would be much appreciated.
